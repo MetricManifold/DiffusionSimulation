@@ -1,0 +1,30 @@
+﻿Build started 02/12/2015 7:39:04 PM.
+     1>Project "C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\3611_pfinal\3611_pfinal.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Functions.cpp Interval.cpp Main.cpp Matrix.cpp MatrixBase.cpp ModelBase.cpp Problems.cpp Space1D.cpp Space2D.cpp
+         Space2D.cpp
+         Space1D.cpp
+         Problems.cpp
+         ModelBase.cpp
+         MatrixBase.cpp
+         Matrix.cpp
+         Main.cpp
+         Interval.cpp
+         Functions.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\Debug\3611_pfinal.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\Debug\3611_pfinal.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\Debug\3611_pfinal.lib" /MACHINE:X86 Debug\Functions.obj
+         Debug\Interval.obj
+         Debug\Main.obj
+         Debug\Matrix.obj
+         Debug\MatrixBase.obj
+         Debug\ModelBase.obj
+         Debug\Problems.obj
+         Debug\Space1D.obj
+         Debug\Space2D.obj
+         3611_pfinal.vcxproj -> C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\Debug\3611_pfinal.exe
+     1>Done Building Project "C:\Users\Zirconix\Desktop\Computer Science\C++ Projects\3611_pfinal\3611_pfinal\3611_pfinal.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.23
