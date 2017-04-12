@@ -1,7 +1,4 @@
-
 #include "MatrixBase.h"
-
-#include <iostream>
 
 MatrixBase::MatrixBase(const int N, const int M) : N{ N }, M{ M }
 {

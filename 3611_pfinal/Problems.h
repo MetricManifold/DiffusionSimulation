@@ -3,11 +3,7 @@
 #include <iomanip>
 #include <fstream>
 
-#include "Space1D.h"
-#include "Space2D.h"
 #include "Model.h"
-#include "Interval.h"
-#include "Functions.h"
 
 class problems
 {

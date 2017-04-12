@@ -1,6 +1,5 @@
 #include "ModelBase.h"
 
-double Time::TIME = 0;			// Define the time variable.
 
 template<>
 void ModelBase<Table1D, InitCondition1D>::formNextTimeStep()
@@ -38,9 +37,9 @@ void ModelBase<Table2D, InitCondition2D>::formNextTimeStep()
 		// Sets a new value at the index.
 		*(current_frame->V + i) =
 			u_curr + dT * (
-				Dcoef * (u_next - 2 * u_curr + u_prev) / pow(IC->getIncrementX(), 2) +
-				Dcoef * (u_abov - 2 * u_curr + u_belo) / pow(IC->getIncrementY(), 2)
-				+ R(u_curr));
+			Dcoef * (u_next - 2 * u_curr + u_prev) / pow(IC->getIncrementX(), 2) +
+			Dcoef * (u_abov - 2 * u_curr + u_belo) / pow(IC->getIncrementY(), 2)
+			+ R(u_curr));
 
 		double ans = u_curr + dT * (
 			Dcoef * (u_next - 2 * u_curr + u_prev) / pow(IC->getIncrementX(), 2) +
@@ -73,9 +72,9 @@ void ModelBase<Table2D, InitCondition2D>::formNextTimeStepPolar()
 		// Sets a new value at the index.
 		*(current_frame->V + i) =
 			u_curr + dT * (
-				Dcoef * (r_next * u_next - (r_prev + r_next) * u_curr + r_prev * u_prev) / (r_curr * pow(IC->getIncrementY(), 2)) +
-				Dcoef * (u_abov - 2 * u_curr + u_belo) / (pow(r_curr, 2) * pow(IC->getIncrementX(), 2))
-				+ R(u_curr));
+			Dcoef * (r_next * u_next - (r_prev + r_next) * u_curr + r_prev * u_prev) / (r_curr * pow(IC->getIncrementY(), 2)) +
+			Dcoef * (u_abov - 2 * u_curr + u_belo) / (pow(r_curr, 2) * pow(IC->getIncrementX(), 2))
+			+ R(u_curr));
 	}
 
 	frames.push_back(current_frame);

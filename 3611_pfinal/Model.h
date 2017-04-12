@@ -23,3 +23,5 @@ public:
 	Model2D(const double dT, const double Dcoef, InitCondition2D *IC, double(*R)(double)) :
 		ModelBase(dT, Dcoef, IC, R) {}
 };
+
+

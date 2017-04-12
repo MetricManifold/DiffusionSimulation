@@ -2,14 +2,12 @@
 
 #include "MatrixBase.h"
 #include "Interval.h"
-#include "ModelBase.h"
 #include "Functions.h"
 
 /*
 	Contains all the necessary initial conditions for a 1
 	dimensional problem.
 */
-
 struct InitCondition1D : public MatrixBase
 {
 	friend struct Table1D;

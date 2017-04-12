@@ -3,6 +3,24 @@
 #include <cmath>
 #include <random>
 
+/*
+Global time controller.
+*/
+struct Time
+{
+private:
+	static double TIME;				// time variable.
+
+	Time() = delete;				// Prevent the object from being created.
+	~Time() = delete;
+
+public:
+	static double getTime() { return TIME; }
+	static void addTime(double dT) { TIME += dT; }
+	static void resetTime() { TIME = 0; }
+};
+
+
 class rand_gen
 {
 private:
@@ -10,7 +28,7 @@ private:
 
 	rand_gen() {}
 	~rand_gen() {}
-	
+
 public:
 	static std::default_random_engine * getGen() { return generator; }
 
@@ -20,7 +38,7 @@ namespace func
 {
 	double zero(double, double);
 	double zero(double);
-	
+
 	// Problem 1
 	double problem1dist(double);
 	double problem1R(double);

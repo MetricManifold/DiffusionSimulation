@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 std::default_random_engine *rand_gen::generator = new std::default_random_engine;
-
+double Time::TIME = 0;			// Define the time variable.
 
 double func::zero(double, double)
 {
